@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    
+</body>
+
+<script>
+    var criar = window.document.getElementById("1div");
+    function criacaodediv() {
+        if(!criar){
+            criar = document.createElement("div")
+            criar.id = "1div";
+            criar.innerHTML = "<p>esse parágrafo localiza-se dentro da div que o javascript criou</p>"
+            document.body.appendChild(criar)
+
+
+        }
+    }
+    criacaodediv()
+    
+</script>
+</html>

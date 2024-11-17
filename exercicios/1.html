@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <p id="escrita"></h1>
+
+</body>
+<script>
+    function moveon(){// função que redireciona o usuario para outra página ou outro local do mesmo site
+        var pergunta = window.confirm("você quer ir para o youtube.com")
+        if (pergunta) { //se o usuario concordar com a pergunta feitta pelo código da linha 15, o comando
+            //abaixo será executado
+            window.location = "http://www.youtube.com" //comando fundamental para redirecionar o usuario
+        }
+        else{
+            var escrever = window.document.getElementById("escrita")
+            escrever.innerHTML = "<p>parece que você optou por não ir até o youtube</p>" 
+        }
+    }
+    setTimeout(moveon, 600000);
+    moveon()
+    
+</script>
+</html>
